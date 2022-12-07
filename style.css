@@ -1,0 +1,228 @@
+:root {
+    /* colors */
+        /* menu texts */
+        --passivetext: rgb(209, 171, 75);
+        --activetext: rgb(255, 245, 238);
+        /* body texts */
+        --contenttext: rgb(29, 28, 27);
+        --headingtext: rgb(112, 81, 3);
+        /* background */
+        --backwhite: #f5ede6;
+        --backblack: #1a1a1a;
+        --backgold: rgb(250, 235, 215);
+        /* button */
+        --buttonpassive: rgb(237, 242, 245);
+        --buttonhover: rgb(209, 171, 75);
+        --buttonactive: rgb(240, 222, 64);
+        
+    
+    
+      }
+    
+      html {
+        scroll-behavior: smooth;
+      }
+    
+    
+    /* Scroll bar region */
+      ::-webkit-scrollbar {
+        width: 15px;
+        }
+    
+        /* Track */
+        ::-webkit-scrollbar-track {
+        background: var(--backblack);
+        }
+        
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+        background: var(--backgold);
+        border-radius: 5px;
+        }
+    
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+        background: var(--passivetext); 
+        }
+    
+    
+        a, a:hover, a:focus, a:active {
+            text-decoration: none;
+            color: inherit;
+       }
+    
+    
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family: 'Microsoft Tai Le';
+        list-style: none;
+        box-sizing: border-box;
+        background: var(--backwhite);
+    }
+    
+      
+    
+    
+    
+    /* experiment zone */
+    
+    
+    
+    /* @media screen and (max-width: 768px) {
+    #sectionone {display:none;}
+    } */
+    
+    
+    /* closed */
+    
+    
+    
+    
+    
+      .square {
+        background-color:var(--backblack);
+        width: 100%;
+        height: 10%; }
+    
+    
+    section {
+        height: fit-content;
+        overflow: hidden;
+        background-color: #000000;
+    }
+    
+    
+    
+    section.sky{
+        position: absolute !important;
+        left: -10% !important;
+        top: unset !important;
+        bottom: -100px;
+    }
+    
+    .sky img{
+        width: 100%;
+        height: 80%;
+        filter: brightness(0.8);
+    }
+    
+    .v3 {
+        position: absolute !important;
+        left: 7% !important;
+        /* top: 25vh !important; */
+        top: unset !important;
+        bottom: 1vh;
+    }
+    
+    .v3 img{
+        width: 100%;
+        filter: brightness(.8);
+        
+    }
+    
+    
+    
+    
+    .v2 {
+        position: absolute !important;
+        left: 1% !important;
+        /* top: 25vh !important; */
+        top: unset !important;
+        bottom: 1vh;
+    }
+    
+    .v2 img{
+       
+        width: 100%;
+        filter: brightness(.8);
+    }
+    
+    .person {
+        position: absolute;
+        left: 31% !important;
+        bottom: -7% !important;
+        top:unset !important;
+    }
+    
+    
+    .person img{
+        z-index: 1;
+        width: 90%;
+        /* left: -20px; */
+        top: 70vh !important;
+        filter: brightness(0.9);
+    }
+    
+    .v1 {
+        position: absolute;
+        right: -15% !important;
+        bottom: 10px !important;
+        top: unset !important;
+        left: unset !important; 
+    }
+    
+    .v1 img {
+        width: 90%;
+        height: 100%;
+        z-index: 3;
+        filter: brightness(1);
+    }
+    
+
+    
+    .text {
+        position: absolute;
+        left: 30% !important;
+        bottom: 200px !important;
+        top: unset !important;
+        right: unset !important; 
+    }
+    
+    .text img {
+        width: 80%;
+        height: 80%;
+        z-index: 3;
+        filter: brightness(0.9);
+    }
+
+          /* button */
+
+
+          .but1{
+            position: absolute;
+        left: 45% !important;
+        bottom: 100px !important;
+        top: unset !important;
+        right: unset !important; 
+
+
+            margin: auto;
+            
+            width:fit-content;
+            border-radius: 16px;
+        
+            border: solid 2px; 
+            background-color: none;
+            border-color: var(--backgold);
+            align-items: center;   
+        
+            font-size: 1.5em;
+            color: white;
+            text-align:center;
+            padding: 17px;
+          
+        }
+        
+        .but1:hover {
+            background-color:var(--buttonhover);
+            color: var(--activetext);
+            cursor: pointer;
+            transition: 1s;
+        }
+        
+        .but1:active{
+            background-color:var(--buttonactive);
+            transition: 0.5s;
+        }
